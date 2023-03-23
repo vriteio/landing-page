@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#components/*": ["./src/components/*"],
+      "#assets/*": ["./src/assets/*"],
+      "#lib/*": ["./src/lib/*"],
+      "#icons/*": ["./src/icons/*"],
+      "#styles/*": ["./src/styles/*"]
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["@vrite/sdk/types", "astro/client"]
+  }
+}
