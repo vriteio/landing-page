@@ -5,6 +5,7 @@ import sitemap from "@astrojs/sitemap";
 import unocss from "unocss/astro";
 import { vritePlugin } from "@vrite/sdk/astro";
 import { loadEnv } from "vite";
+import robotsTxt from "astro-robots-txt";
 
 const { VRITE_ACCESS_TOKEN, VRITE_CONTENT_GROUP_ID } = loadEnv(
   import.meta.env.MODE,
@@ -17,6 +18,14 @@ export default defineConfig({
     unocss(),
     solidJs(),
     sitemap(),
+    robotsTxt({
+      policy: [
+        {
+          userAgent: "*",
+          disallow: ["/frame/"],
+        },
+      ],
+    }),
     vritePlugin({
       accessToken: VRITE_ACCESS_TOKEN,
       contentGroupId: VRITE_CONTENT_GROUP_ID,
