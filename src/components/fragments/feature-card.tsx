@@ -45,7 +45,7 @@ const FeatureCard: Component<FeatureCardProps> = (props) => {
           {props.icon && (
             <IconButton
               path={props.icon || ""}
-              class="m-0"
+              class="m-0 px-1"
               badge
               size="small"
               color={props.gradient ? "contrast" : "primary"}
@@ -56,6 +56,7 @@ const FeatureCard: Component<FeatureCardProps> = (props) => {
           {!props.icon && (
             <Button
               badge
+              class="px-1"
               color={props.gradient ? "contrast" : "primary"}
               size="small"
               text={props.gradient ? "soft" : "primary"}
@@ -103,6 +104,7 @@ const TextFeatureCard: Component<TextFeatureCardProps> = (props) => {
             badge
             size="small"
             color="primary"
+            class="px-1"
             label={props.label}
           />
         </div>

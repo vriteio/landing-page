@@ -142,7 +142,7 @@ const OverviewSection = () => {
               return (
                 <IconButton
                   path=""
-                  class="m-0 rounded-full"
+                  class="m-0 rounded-full dark:bg-gray-800"
                   size="small"
                   onClick={() => moveToSlide(index())}
                   color={index() === activeSlideIndex() ? "primary" : "base"}
