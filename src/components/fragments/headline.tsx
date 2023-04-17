@@ -34,14 +34,17 @@ const EmailForm = () => {
         />
         <Button
           color="primary"
-          class="flex items-center justify-center m-0 h-9 w-32 whitespace-nowrap"
+          class="flex items-center justify-center m-0 h-9 w-18 whitespace-nowrap"
           disabled={!isEmailCorrect()}
           onClick={handleSubmitEmailForm}
         >
-          <span class={clsx(processing() && "invisible")}>Request access</span>
+          <span class={clsx(processing() && "invisible")}>Sign up</span>
           {processing() && <Loader class="absolute" />}
         </Button>
       </div>
+      <p class="text-gray-600 dark:text-gray-200 text-sm pl-1 pt-1 hidden md:flex">
+        Be the first to know when Public Beta comes out!
+      </p>
     </>
   );
 };
@@ -65,7 +68,7 @@ const Headline: Component = () => {
       <div>
         <div class="flex justify-start">
           <Button badge text="soft" class="font-semibold text-center">
-            Private Beta
+            Coming Soon
           </Button>
         </div>
         <h1 class="text-6xl md:text-7xl" style={{ perspective: "600px" }}>

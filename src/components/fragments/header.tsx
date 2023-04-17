@@ -24,7 +24,7 @@ const Header = () => {
           Blog
         </Button>
         <Button color="primary" onClick={() => setEmailModal(true)}>
-          Request access
+          Sign up
         </Button>
       </Card>
     </div>

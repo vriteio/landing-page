@@ -26,7 +26,7 @@ const EmailCard = () => {
       color="primary"
       class="max-w-screen-xl w-full p-8 m-0 md:p-16 relative flex justify-center items-center flex-col text-center"
     >
-      <h2 class="text-3xl md:text-4xl mb-4">Request access</h2>
+      <h2 class="text-3xl md:text-4xl mb-4">Sign up</h2>
       <div class="max-w-[26rem] w-full justify-center flex flex-col items-center">
         <div class="items-center justify-start w-full gap-2 flex flex-col md:flex-row mb-2">
           <Input
@@ -50,8 +50,8 @@ const EmailCard = () => {
           </Button>
         </div>
         <p class="max-w-[20rem]">
-          Sign up for access to the Private Beta of Vrite. We'll send you an
-          invite soon after.
+          Sign up to be the first to know when the Vrite Public Beta comes out
+          and stay in the loop with Vrite development!
         </p>
       </div>
     </Card>

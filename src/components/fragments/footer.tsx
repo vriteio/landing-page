@@ -8,7 +8,12 @@ const Footer: Component = () => {
     <>
       <Card class="max-w-screen-xl p-4 m-0 md:p-16 w-full flex flex-col justify-center items-start rounded-b-none border-b-0 gap-1 md:gap-0 text-gray-600 dark:text-gray-300">
         <div class="flex-col md:flex-row flex w-full flex-1 justify-center items-start md:items-center gap-1 md:gap-2">
-          <h2 class="text-3xl md:text-4xl flex-1">Private Beta</h2>
+          <div class="flex flex-col w-full">
+            <h2 class="text-3xl md:text-4xl flex-1">Public Beta</h2>
+            <span class="text-xl md:text-xl font-semibold -mt-1.5 opacity-70">
+              Coming April 25th
+            </span>
+          </div>
         </div>
         <div class="flex flex-col md:flex-row w-full justify-start items-start md:items-center gap-1 md:gap-2">
           <IconButton

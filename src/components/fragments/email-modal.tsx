@@ -52,8 +52,8 @@ const EmailModal = () => {
           }
         >
           <p class="text-gray-600 dark:text-gray-200 mb-4">
-            Sign up for access to the Private Beta of Vrite. We'll send you an
-            invite soon.
+            Sign up to be the first to know when the Vrite Public Beta comes out
+            and stay in the loop with Vrite development!
           </p>
           <Input
             value={emailContext.email}

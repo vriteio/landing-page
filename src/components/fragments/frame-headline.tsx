@@ -42,7 +42,7 @@ const FrameHeadline: Component<FrameHeadlineProps> = (props) => {
             class="font-semibold text-center"
             color="contrast"
           >
-            Private Beta
+            Coming Soon
           </Button>
         </div>
         <h1
