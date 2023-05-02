@@ -11,7 +11,7 @@ const Footer: Component = () => {
           <div class="flex flex-col w-full">
             <h2 class="text-3xl md:text-4xl flex-1">Public Beta</h2>
             <span class="text-xl md:text-xl font-semibold -mt-1.5 opacity-70">
-              Coming April 25th
+              Coming May 9th
             </span>
           </div>
         </div>
