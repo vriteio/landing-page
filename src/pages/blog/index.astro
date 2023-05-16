@@ -16,7 +16,6 @@ import { mdiCalendar } from "@mdi/js";
 import { format } from "date-fns";
 import { FrameHeadline } from "#components/fragments/frame-headline";
 import { getContentPieces } from "virtual:vrite";
-import { EmailCard } from "#components/fragments/email-card";
 
 const contentPieces = await getContentPieces({ limit: "all" });
 const title = "Vrite － headless CMS for technical content";
@@ -88,7 +87,6 @@ export const prerender = true;
         </div>
       </div>
       <EmailModal client:load />
-      <EmailCard />
       <Footer client:idle />
     </main>
   </body>

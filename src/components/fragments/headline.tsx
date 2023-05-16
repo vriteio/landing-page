@@ -1,4 +1,4 @@
-import { Button } from "#components/primitives/button";
+import { Button, IconButton } from "#components/primitives/button";
 import { Input } from "#components/primitives/input";
 import { Loader } from "#components/primitives/loader";
 import {
@@ -11,6 +11,7 @@ import {
 import clsx from "clsx";
 import { Component, createSignal } from "solid-js";
 import { Observed } from "./observed";
+import { mdiGithub } from "@mdi/js";
 
 const EmailForm = () => {
   const [processing, setProcessing] = createSignal(false);
@@ -68,7 +69,7 @@ const Headline: Component = () => {
       <div>
         <div class="flex justify-start">
           <Button badge text="soft" class="font-semibold text-center">
-            Coming Soon
+            Public Beta
           </Button>
         </div>
         <h1 class="text-6xl md:text-7xl" style={{ perspective: "600px" }}>
@@ -122,7 +123,20 @@ const Headline: Component = () => {
           Dedicated <b>headless Content Management System (CMS)</b> for your
           programming blogs, documentation, and more.
         </p>
-        <EmailForm />
+        <div class="items-center justify-start hidden w-full gap-2 mt-2 md:flex">
+          <Button
+            color="primary"
+            class="flex items-center justify-center m-0 whitespace-nowrap"
+            link="https://app.vrite.io"
+          >
+            Get Started
+          </Button>
+          <IconButton
+            label="GitHub"
+            path={mdiGithub}
+            link="https://github.com/vriteio/vrite"
+          ></IconButton>
+        </div>
       </div>
     </Observed>
   );

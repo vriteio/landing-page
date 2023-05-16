@@ -1,6 +1,6 @@
 import { IconButton } from "#components/primitives/button";
 import { Card } from "#components/primitives/card";
-import { mdiAt, mdiLinkedin, mdiTwitter } from "@mdi/js";
+import { mdiAt, mdiGithub, mdiLinkedin, mdiTwitter } from "@mdi/js";
 import type { Component } from "solid-js";
 
 const Footer: Component = () => {
@@ -39,6 +39,14 @@ const Footer: Component = () => {
             label="LinkedIn"
             class="m-0"
             link="https://www.linkedin.com/company/vrite/"
+          />
+          <IconButton
+            path={mdiGithub}
+            variant="text"
+            text="soft"
+            label="GitHub"
+            class="m-0"
+            link="https://github.com/vriteio/vrite"
           />
         </div>
         <span class="text-left md:text-center w-full text-sm mt-4">

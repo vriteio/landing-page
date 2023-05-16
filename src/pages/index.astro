@@ -8,7 +8,6 @@ import { EmailModal } from "#components/fragments/email-modal";
 import { OverviewSection } from "#components/fragments/overview-section";
 import { DashboardSection } from "#components/fragments/dashboard-section";
 import { ScalabilitySection } from "#components/fragments/scalability-section";
-import { EmailCard } from "#components/fragments/email-card";
 import BaseHead from "#components/fragments/base-head.astro";
 
 const image = "https://vrite.io/meta-image.png";
@@ -46,7 +45,6 @@ const description =
       <EditorSection client:idle />
       <DashboardSection client:idle />
       <ScalabilitySection client:idle />
-      <EmailCard client:idle />
       <Footer client:idle />
       <EmailModal client:load />
     </main>

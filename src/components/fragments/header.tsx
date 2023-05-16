@@ -2,6 +2,7 @@ import { Button, IconButton } from "#components/primitives/button";
 import { Card } from "#components/primitives/card";
 import { logoIcon } from "#icons/logo";
 import { setEmailModal } from "#lib/email";
+import { mdiGithub } from "@mdi/js";
 
 const Header = () => {
   return (
@@ -20,10 +21,13 @@ const Header = () => {
         </div>
 
         <div class="flex-1"></div>
-        <Button link="/blog" variant="text">
-          Blog
-        </Button>
-        <Button color="primary" onClick={() => setEmailModal(true)}>
+        <IconButton
+          link="https://github.com/vriteio/vrite"
+          variant="text"
+          path={mdiGithub}
+          label="Star on GitHub"
+        ></IconButton>
+        <Button color="primary" link="https://app.vrite.io">
           Sign up
         </Button>
       </Card>
