@@ -28,7 +28,7 @@ const Header = () => {
           label="Star on GitHub"
         ></IconButton>
         <Button color="primary" link="https://app.vrite.io">
-          Sign up
+          Sign in
         </Button>
       </Card>
     </div>

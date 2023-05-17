@@ -10,9 +10,6 @@ const Footer: Component = () => {
         <div class="flex-col md:flex-row flex w-full flex-1 justify-center items-start md:items-center gap-1 md:gap-2">
           <div class="flex flex-col w-full">
             <h2 class="text-3xl md:text-4xl flex-1">Public Beta</h2>
-            <span class="text-xl md:text-xl font-semibold -mt-1.5 opacity-70">
-              Coming May 9th
-            </span>
           </div>
         </div>
         <div class="flex flex-col md:flex-row w-full justify-start items-start md:items-center gap-1 md:gap-2">
