@@ -20,7 +20,7 @@
     "@sendgrid/client": "^7.7.0",
     "@types/html-to-text": "^9.0.0",
     "@unocss/reset": "^0.48.5",
-    "@vrite/sdk": "2023.3.10-beta",
+    "@vrite/sdk": "2023.5.17-beta",
     "astro": "^2.1.4",
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
