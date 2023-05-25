@@ -1,3 +1,5 @@
+> **`Note`**: Moved to the Vrite monorepo at https://github.com/vriteio/vrite 
+
 ![Cover image](public/meta-image.png)
 
 # Vrite landing page
